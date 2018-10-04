@@ -7,9 +7,11 @@
 
 
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<!--jdbc 4.0 type-->
 		<property name="driverClassName">
 			<value>oracle.jdbc.driver.OracleDriver</value>
 		</property>
+		<!--jdbc 4.0 type-->
 		<property name="url">
 			<value>jdbc:oracle:thin:@localhost:1521:xe</value>
 		</property>
@@ -21,11 +23,11 @@
 		</property>
 	</bean>
 
-	<bean id="accdao" class="com.spring.dao.AccountDaoImpl" autowire="no">
+	<!--<bean id="accdao" class="com.spring.dao.AccountDaoImpl" autowire="no">
 		<property name="dataSource">
 			<ref bean="dataSource"/>
 		</property>
-	</bean>
+	</bean>-->
 
-	<!-- <bean id="accdao" class="edu.aspire.dao.AccountDaoImpl" autowire="byType"/> -->
+	 <bean id="accdao" class="com.spring.dao.AccountDaoImpl" autowire="byType"/>
 </beans>
