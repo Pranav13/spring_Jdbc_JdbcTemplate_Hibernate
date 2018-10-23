@@ -7,7 +7,7 @@ import java.sql.Statement;
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Required;
 
-import com.spring.model.Account;
+import com.spring.Account;
 public class AccountDaoImpl implements AccountDao {
 	private DataSource dataSource;
 

@@ -1,6 +1,6 @@
 package com.spring.dao;
 
-import com.spring.model.Account;
+import com.spring.Account;
 public interface AccountDao {
 	public void save(Account account);
 	public Account get(int accno);

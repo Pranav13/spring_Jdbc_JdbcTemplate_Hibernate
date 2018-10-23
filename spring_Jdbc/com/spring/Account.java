@@ -1,4 +1,4 @@
-package com.spring.model;
+package com.spring;
 //CREATE TABLE ACCOUNT(ACC_NO NUMBER(4)PRIMARY KEY, ACC_NAME VARCHAR2(20), ACC_TYPE VARCHAR2(20), BAL NUMBER(10,2));
 public class Account {
 	private int accno;
